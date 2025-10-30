@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SafeHaven — Stay safe online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Noto+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">SafeHaven</a>
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="lessons.html">Lessons</a>
+                <a href="articles.html">Articles</a>
+            </nav>
+            <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <h1 class="hero-title">Learn how to stay safe online</h1>
+                <p class="hero-sub">Practical lessons, short articles, and interactive activities to help you navigate the web with confidence.</p>
+                <p class="hero-cta">
+                    <a class="btn primary" href="lessons.html">Browse Lessons</a>
+                    <a class="btn ghost" href="articles.html">Read Articles</a>
+                </p>
+            </div>
+        </section>
+
+        <section class="features container">
+            <article class="feature card reveal">
+                <h3>Interactive Activities</h3>
+                <p>Embed Code.org App Lab activities so you can practice what you learn in a safe environment.</p>
+            </article>
+            <article class="feature card reveal">
+                <h3>Short Lessons</h3>
+                <p>Clear, step-by-step lessons focused on everyday online safety and privacy.</p>
+            </article>
+            <article class="feature card reveal">
+                <h3>Readable Articles</h3>
+                <p>Concise articles with practical tips, written for people of all ages.</p>
+            </article>
+        </section>
+
+        <section class="latest container">
+            <h2 class="section-title reveal">Featured Lesson</h2>
+            <div class="card reveal">
+                <h3>Identify Malware</h3>
+                <p>Learn how malware works and see how you can keep your computer healthy.</p>
+                <p><a class="btn outline" href="lessons.html#lesson-1">Start Lesson</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year"></span> SafeHaven — Digital safety made simple.</p>
+            <p class="small">Built with care • Minimalist, colorful design</p>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
